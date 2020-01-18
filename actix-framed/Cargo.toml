@@ -19,11 +19,11 @@ name = "actix_framed"
 path = "src/lib.rs"
 
 [dependencies]
-actix-codec = "0.2.0"
-actix-service = "1.0.1"
-actix-router = "0.2.1"
-actix-rt = "1.0.0"
-actix-http = "1.0.1"
+actix-codec = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-service = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-router = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-http = { path = "../actix-http" }
 
 bytes = "0.5.3"
 futures = "0.3.1"
@@ -31,7 +31,7 @@ pin-project = "0.4.6"
 log = "0.4"
 
 [dev-dependencies]
-actix-server = "1.0.0"
-actix-connect = { version = "1.0.0", features=["openssl"] }
-actix-http-test = { version = "1.0.0", features=["openssl"] }
-actix-utils = "1.0.3"
+actix-server = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-connect = { git = "https://github.com/Litarvan/actix-net.git", features=["openssl"] }
+actix-http-test = { path = "../test-server", features=["openssl"] }
+actix-utils = { git = "https://github.com/Litarvan/actix-net.git" }

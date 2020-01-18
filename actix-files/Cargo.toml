@@ -18,9 +18,9 @@ name = "actix_files"
 path = "src/lib.rs"
 
 [dependencies]
-actix-web = { version = "2.0.0-rc", default-features = false }
-actix-http = "1.0.1"
-actix-service = "1.0.1"
+actix-web = { path = "..", default-features = false }
+actix-http = { path = "../actix-http" }
+actix-service = { git = "https://github.com/Litarvan/actix-net.git" }
 bitflags = "1"
 bytes = "0.5.3"
 futures = "0.3.1"
@@ -32,5 +32,5 @@ percent-encoding = "2.1"
 v_htmlescape = "0.4"
 
 [dev-dependencies]
-actix-rt = "1.0.0"
-actix-web = { version = "2.0.0-rc", features=["openssl"] }
+actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-web = { path = "..", features=["openssl"] }

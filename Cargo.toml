@@ -59,20 +59,20 @@ openssl = ["actix-tls/openssl", "awc/openssl", "open-ssl"]
 rustls = ["actix-tls/rustls", "awc/rustls", "rust-tls"]
 
 [dependencies]
-actix-codec = "0.2.0"
-actix-service = "1.0.2"
-actix-utils = "1.0.6"
-actix-router = "0.2.4"
-actix-rt = "1.0.0"
-actix-server = "1.0.0"
-actix-testing = "1.0.0"
-actix-macros = "0.1.0"
-actix-threadpool = "0.3.1"
-actix-tls = "1.0.0"
+actix-codec = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-service = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-utils = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-router = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-server = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-testing = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-macros = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-threadpool = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-tls = { git = "https://github.com/Litarvan/actix-net.git" }
 
-actix-web-codegen = "0.2.0"
-actix-http = "1.0.1"
-awc = { version = "1.0.1", default-features = false }
+actix-web-codegen = { path = "actix-web-codegen" }
+actix-http = { path = "actix-http" }
+awc = { path = "awc", default-features = false }
 
 bytes = "0.5.3"
 derive_more = "0.99.2"
@@ -116,13 +116,3 @@ actix-session = { path = "actix-session" }
 actix-files = { path = "actix-files" }
 actix-multipart = { path = "actix-multipart" }
 awc = { path = "awc" }
-actix-codec = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-service = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-utils = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-router = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-server = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-testing = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-macros = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-threadpool = { git = "https://github.com/Litarvan/actix-net.git" }
-actix-tls = { git = "https://github.com/Litarvan/actix-net.git" }

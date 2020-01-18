@@ -40,13 +40,13 @@ failure = ["fail-ure"]
 secure-cookies = ["ring"]
 
 [dependencies]
-actix-service = "1.0.1"
-actix-codec = "0.2.0"
-actix-connect = "1.0.1"
-actix-utils = "1.0.3"
-actix-rt = "1.0.0"
-actix-threadpool = "0.3.1"
-actix-tls = { version = "1.0.0", optional = true }
+actix-service = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-codec = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-connect = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-utils = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-threadpool = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-tls = { git = "https://github.com/Litarvan/actix-net.git", optional = true }
 
 base64 = "0.11"
 bitflags = "1.2"
@@ -90,10 +90,10 @@ flate2 = { version = "1.0.13", optional = true }
 fail-ure = { version = "0.1.5", package="failure", optional = true }
 
 [dev-dependencies]
-actix-server = "1.0.0"
-actix-connect = { version = "1.0.0", features=["openssl"] }
-actix-http-test = { version = "1.0.0", features=["openssl"] }
-actix-tls = { version = "1.0.0", features=["openssl"] }
+actix-server = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-connect = { git = "https://github.com/Litarvan/actix-net.git", features=["openssl"] }
+actix-http-test = { path = "../test-server", features=["openssl"] }
+actix-tls = { git = "https://github.com/Litarvan/actix-net.git", features=["openssl"] }
 futures = "0.3.1"
 env_logger = "0.6"
 serde_derive = "1.0"

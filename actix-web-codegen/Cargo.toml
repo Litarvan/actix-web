@@ -17,6 +17,6 @@ syn = { version = "^1", features = ["full", "parsing"] }
 proc-macro2 = "^1"
 
 [dev-dependencies]
-actix-rt = { version = "1.0.0" }
-actix-web = { version = "2.0.0-rc" }
+actix-rt = { git = "https://github.com/Litarvan/actix-net.git" }
+actix-web = { path = ".." }
 futures = { version = "0.3.1" }
